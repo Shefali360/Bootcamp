@@ -1,0 +1,127 @@
+*{margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+    
+.mainDiv{
+
+}
+.headerDiv{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 5px 3px #ccc;
+    height: 60px;
+    color:rgb(93,188,210);
+}
+
+.logo{
+ width: 60%;
+ padding: 10px;
+ float: left;
+}
+
+.menu{
+    list-style-type: none;
+    width: 20%;
+    float: right;
+    display: :inline;
+}
+.menu li{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.reportDiv{
+    background-color:rgb(185,193,204);
+    padding : 10px;
+    color: white;
+}
+.form{
+    padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    margin: 8px 0;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+  }
+  select{
+    background-color: rgb(8,196,158);   
+  }
+ 
+  .radio-inline{
+      margin-right: 200px;
+      box-sizing: border-box;
+  }
+
+  textarea{
+      border-radius: 4px;
+      width: 100%;
+      border: 1px solid #ccc;
+  }
+  
+    .formDiv {
+     border: 1px solid rgb(185,193,204);
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+  }
+
+
+  
+  input[type=text] .attach {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    
+  }
+  
+  .selectbtn{
+    float: left;
+    margin-left: -104px;
+    margin-top: 9px;
+    z-index: 999;
+    position: absolute;
+    width: 8%;
+    padding: 5px;
+    height: 30px;
+    background: #ccc;
+    color: white;
+    border: 1px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  .selectbtn:hover {
+    background: #0b7dda;
+  }
+  
+  .endDiv{
+    text-align: right;
+    background-color: rgb(185,193,204);
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.submit  {
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(8,196,158);
+    color: white;
+
+}
+
+
+
