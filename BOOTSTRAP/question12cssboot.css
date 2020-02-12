@@ -1,0 +1,95 @@
+*{margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+ body{
+     background-color: white;
+
+ }
+
+ .navbar-default{
+    background-color: white;
+    border:none;
+    font-size:22px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 5px 3px #ccc;
+     /*
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 5px 3px #ccc;
+    height: 60px;
+    color:rgb(93,188,210);}*/
+}
+
+.formContent{
+    border: 1px solid #bbb;
+}
+.navbar-default .logo{
+    padding-top:18px;
+    color:rgb(93,188,210);
+    font-weight: bold;
+    font-size: 26px;
+
+}
+.navbar-default .navbar-nav li a {
+    color:rgb(93,188,210);
+    font-size: 17px;
+}
+/* 
+.menu{
+    padding:10px;
+    color:rgb(93,188,210);
+} */
+.formHeader{
+    height:50px;
+    background-color: #bbb;
+    color:white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size:20px;
+    padding:13px;
+    font-weight:bold;
+}
+.drop{
+    background-color: rgb(8,196,158);
+    color:white;   
+  }
+
+.secondbtn{
+    margin-right:220px;
+}
+
+.attach{
+    padding-right:100px;
+}
+.selectbtn{
+    float: right;
+}
+
+.btn-default{
+    float:right;
+    background-color:rgb(8,196,158);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+    
+
+}
+.last{
+    background-color:#ddd;
+    height:50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top:8px;  
+}
+
+@media only screen and (max-width: 600px) {
+    .secondbtn{
+        margin-right: 0px ;
+    }
+}
+
+
+
