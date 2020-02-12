@@ -64,6 +64,14 @@
 .attach{
     padding-right:100px;
 }
+
+.chbtndiv{
+    padding-top: 25px;
+}
+.chfilebtn{
+   background-color: #ccc;
+   color: white;
+}
 .selectbtn{
     float: right;
 }
