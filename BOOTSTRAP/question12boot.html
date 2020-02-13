@@ -85,13 +85,12 @@
                     <option value="medium">Medium</option>
                 </select>
                 </div>
-                <div class="input-group">
-                <label for="attachments">Attachments:</label><br>
-                <input type="text" class="form-control" placeholder="No File Selected" name="attachment">
-                <div class="input-group-btn chbtndiv">
-                  <button class="btn btn-default chfilebtn" type="submit">Choose File</button>
-                </div>
-                </div>
+                  <label for="attachments">Attachments:</label>
+                  <div class="custom-input-file">
+                  <input class="attach" type="file" name="attachment">
+                  <button class="selectbtn" type="button">Choose File</button>
+                  </div>
+              
              </form>
              <br>
             </div>
