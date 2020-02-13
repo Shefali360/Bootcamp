@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question1</title>
+  </head>
+  <body onload="simpleInterest()">
+      <h2>Ques1.Prompt for amount, interest rate and no. of years and calculate simple interest.</h2>
+      <script>
+
+function simpleInterest() {
+    let amount = prompt("Enter amount:");
+    let interest_rate = prompt("Enter interest rate:");
+    let num_years = prompt("Enter the number of years:");
+    if(amount != "" && interest_rate != ""  && num_years != ""){
+    let SI=(amount * interest_rate * num_years)/100;
+    alert("Simple Interest is : "+ SI);
+    }
+    else{ alert("Please fill the proper values")}
+}   
+    </script>
+  </body>
+</html>
+
+
