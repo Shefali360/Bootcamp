@@ -61,8 +61,10 @@
                     <option value="medium">Medium</option>
                 </select>
                 <label for="attachments">Attachments:</label>
-                <input class="attach" type="text" placeholder="No File Selected" name="attachment">
-                <button class="selectbtn" type="submit">Choose File</button>
+                <div class="custom-input-file">
+                <input class="attach" type="file" name="attachment">
+                <button class="selectbtn" type="button">Choose File</button>
+                </div>
             </div>
             <div class="endDiv">
                 <input class="submit" type="submit" value="Send">

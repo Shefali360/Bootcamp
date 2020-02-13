@@ -61,12 +61,15 @@ h2{
     }
 .list{
         display:flex;
+        margin:0;
+        padding:0;
+        justify-content: space-between;
 
     }
 .card{
   padding:2px;
   border:1px solid#bbb;
-  margin-right:23px;
+  /* margin-right:23px; */
 }
 .cardDiv{
     height:315px;
