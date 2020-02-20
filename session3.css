@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     /* background-color: white;  */
+}
+.main-container{
+    width:100%;
+    overflow:auto;
+    
+}
+.sidebar{
+    width:20%;
+    background-color:#2f4050;
+    height:680px;
+    float:left;
+
+}
+
+.top-img-box{
+    background-color: RGB(31,52,70);
+    height:150px;
+}
+
+.emp-img{
+    height:70px;
+    width:70px;
+    border-radius: 40px;
+    margin-left:35px;
+    margin-top:30px;
+}
+
+.emp-name{
+    color:white;
+    font-weight:bold;
+    margin-left:35px;
+    font-size:14px;
+}
+
+
+.nav-list{
+    list-style:none;
+}
+
+.nav-list li a {
+    color:#a7b1c2;
+    text-decoration: none;
+    font-size:14px;
+    font-weight: bold;
+
+}
+
+.nav-list li:hover{
+    background-color:RGB(31,52,70);
+}
+
+.nav-list li:hover > a {
+    color:white;
+}
+
+.nav-list li {
+    padding:15px 15px 15px 40px; 
+}
+
+.nav-list li i:after{
+    content: '';
+    padding:5px;
+}
+.main-header{
+    height:70px;
+    background-color: #f3f3f4;
+     float:left;
+     width:80%; 
+    position: fixed;
+    left:20%;
+     border-bottom: 1px #ccc solid;
+     
+}
+
+.left-main-header{
+    width:50%;
+    background-color: #f3f3f4;
+    float:left;
+    margin-top:15px;
+    margin-left:10px;
+}
+
+.toggler{
+    display:inline-block;
+    background-color: #1ab394;
+    padding:8px 15px;
+    color:white;
+    border-radius: 5px;
+    margin-right:13px;
+}
+.search-bar{
+    /* margin-top:20px;
+    margin-left:70px;*/
+    height:30px;
+    width:200px;
+    border:none; 
+    background-color:#f3f3f4;
+    font-size:14px;
+}
+
+.right-main-header{
+    float:right;
+    background-color:#f3f3f4;  
+    padding:13px;
+
+}
+
+.right-main-header li{
+        float:left;
+        list-style:none;
+        margin-right:23px;
+        margin-top:15px;
+        
+}
+
+.right-main-header li i{
+ color:gray;
+ font-size:18px;
+}
+
+.right-main-header li .logout{
+    color: gray;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+
+.main-section{
+  width:80%;
+  height:620px;
+  float:right;
+  background-color: #f3f3f4;
+}
+
+.first-section{
+    height:100px;
+    background-color: white; 
+    color:#676a6c;
+    margin-top:70px;
+    padding-top:20px;
+    padding-left:20px;
+    border-bottom:1px #ccc solid;
+}
+
+.firstheading{
+    /* margin-left:20px;
+    margin-top:20px; */
+    font-size:25px;
+}
+
+
+
+.secondheading{
+    display: inline-block;
+    padding-top:10px;
+    font-size:13px;
+}
+.home{
+ margin-right:8px;   
+}
+
+.slash{
+margin-right:10px;
+}
+
+.dashboard{
+    font-weight:bold;
+}
+
+.div1{
+    height:300px;
+    width:23%;
+    float:left;
+    background-color: white;
+    margin:25px 0px 25px 25px;
+    border-top:1px #ccc solid;
+
+}
+.imgdiv{
+    height:160px;
+}
+.imagecontent{
+    height:120px;
+    width:120px;
+    border-radius:70px;
+    margin-top:30px;
+    margin-left:70px;
+    
+}
+
+.trainee-info{
+    padding-top:10px;
+    
+}
+.trainee-info i:after{
+    content: '';
+    padding:3px;
+}
+.trainee-info a{
+    border:1px solid #ddd;
+    color:#676a6c;
+    font-size:12px;
+    padding:5px;
+    border-radius: 2px; 
+    text-decoration: none;
+}
+
+.trainee-info a:first-child
+{
+    margin-left:80px;
+}
+
+.profilecompletion{
+    width:180px;
+    font-size:12px;
+    font-weight: bold;
+    color:#676a6c;
+    text-align:center;
+    margin-top:20px;
+    margin-left:45px;
+}
+
+.progress-bar{
+        height:5px;
+        background-color: #ddd;
+        margin:10px 25px 0px 54px;
+        border-radius: 2px;
+} 
+.progress-bar .progress-done{
+    height:5px;
+    width:83%;
+    background-color: #1ab394;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.div2{
+    height:300px;
+    width:24%;
+    float:left;
+    background-color: white;
+    margin-top:25px;
+    border-top:1px #ccc solid;
+    color:#676a6c;
+
+}
+
+.name{
+    font-size:23px;
+    margin-top:42px;
+    margin-left:35px;
+}
+
+.designation{
+    font-size:17px;
+    margin-left:35px;
+}
+
+.imgicon{
+    /* margin-left:35px;*/
+    margin-right:15px; 
+
+}
+.span{
+    display: block;
+    margin-bottom:15px;
+    font-size:13px;
+    margin-left:35px;
+
+}
+.ttn{
+    margin-top:25px;
+}
+/* .content-list li{
+    margin-bottom:15px;
+    font-size:13px;
+    margin-left:13px;
+} */
+
+/* .content-list li:first-child{
+    margin-top:25px;
+} */
+.div3{
+    height:300px;
+    width:15%;
+    float:left;
+    background-color: white;
+    margin-top:25px;
+    border-top:1px #ccc solid;
+    padding-left:50px;
+}
+
+.experience{
+    height:18px;
+    width:70px;
+    background-color: #e7eaec;
+    color:#5E5E5E;
+    font-size:10px;
+    border-radius: 10px;
+    padding:5px;
+    padding-top:3px;
+    font-weight:bold;
+    margin-top:15px;
+   
+    
+}
+
+.thirddivicons{
+    padding-top:205px;
+    padding-left:25px;
+}
+  
+
+.second-right-section{
+    width:32%;
+    height:300px;
+    background-color: white;
+    float:left;
+    margin-top:25px;
+    margin-left:25px;
+    border-top:1px #ccc solid;
+}
+
+.right_div1{
+    height:33px;
+    border-bottom:1px solid #ddd;
+    
+}
+.second_right_div_heading{
+    margin-top:13px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color:#676a6c;
+    
+}
+.right_div2{
+    height:90px;
+    border-bottom: 1px solid #ddd;
+    padding-top:15px;
+    line-height: 1.2em;
+}
+
+.mentor_img{
+    height:50px;
+    width:50px;
+    border-radius: 30px;
+    float:left;
+    border:1px solid black;
+    margin-left:24px;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+.mentorname{
+    text-decoration: none;
+    color:#337ab7;
+    font-weight: bold;
+    font-size:15px;
+}
+
+.desig{
+    font-size:13px;
+    color:#676a6c;
+    margin-left: 60px;
+}
+
+.right_div3{
+    padding-top:15px;
+    line-height: 1.2em;
+   
+}
+
+.hr_img{
+    height:50px;
+    width:50px;
+    border-radius: 30px;
+    float:left;
+    border: 1px solid black;
+    margin-left:24px;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+.hrname{
+    text-decoration: none;
+    color:#337ab7;
+    font-weight: bold;
+    font-size:15px;
+
+}
