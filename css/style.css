@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin:0 auto;
+    max-width:1100px;
+}
+.clearfix,.clearfix:after,.clearfix:before{
+    clear:both;
+    content:"";
+    display: block;
+}
+.top-nav{
+    width:100%;
+    background-color: RGB(62,91,153);
+}
+.toplogo{
+    float:left;
+    width:50%;
+}
+.logo{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    padding:30px 10px 5px 50px;
+    /* display: inline-block; */
+}
+
+.form1{
+    float:right;
+    width:42%;
+    padding:10px 10px 0px 10px;
+}
+
+.form1-elements{
+    list-style:none;
+    /* float:right; */
+}
+.form1-elements li{
+    float:left;
+    margin:8px;
+}
+.form1-label{
+    color:white;
+    font-size:13px;
+    padding-bottom:5px;
+}
+
+.form1-field{
+    border:1px solid black;
+    height:24px;
+    width:170px;
+}
+
+.forgot-account{
+    font-size:13px;
+    color:#ccc;
+    /* padding-bottom:5px; */
+}
+
+.login-button{
+    background-color:#5c67be ;
+    border:1px solid #717171;
+    padding:3px 5px;
+    color:white;
+    margin-top:20px;
+}
+
+.main-content{
+    width:100%;
+    background-color: #ecedf6;
+}
+.left-div{
+    width:50%;
+    float:left;    
+}
+
+.left-main-content{
+    font-size:20px;
+    font-weight: bold;
+    margin:40px 10px 0px 50px;
+    text-align: left;
+    color:#082f61;
+}
+
+.fbimg{
+    padding-left:50px;;
+}
+.right-div{
+    width:40%;
+    float:right;
+    background-color: #ecedf6;
+}
+
+.rightheading{
+   
+    font-size:38px;
+    font-weight: bold;
+    color:black;
+    padding:20px 30px 0px 0px;
+}
+.secondheading{
+    font-size:20px;
+    padding:10px 30px 0px 0px;
+}
+
+.firstfield{
+    width:100%;
+    margin:20px 0px 10px 0px;
+}
+
+.name{
+    height:39px;
+    background-color: white;
+    border:1.5px solid #ccc;
+    border-radius:5px;
+    font-size:17px;
+    padding-left:10px;
+}
+
+.first{
+    margin-right:13px;
+    width:48%; 
+}
+ .second{
+    width:48%;
+} 
+
+.mobile{
+    width:100%;
+    margin:0px 0px 10px 0px;
+}
+
+.birthlabel{
+    font-size:17px;
+    color:gray;
+    font-weight: bold;
+    padding-bottom:5px;
+}
+.dob{
+    margin-bottom:15px;
+}
+.birth{
+    height:28px;
+    width:60px;
+    background-color: white;
+}
+
+.sex{
+    margin-bottom: 12px;
+}
+.gender{
+    padding-right:25px;
+}
+.tnc{
+    font-size:11px;
+    padding-right:110px;
+    margin-bottom:20px;
+    color:gray;
+    line-height:1.5em;
+}
+span{
+    color:RGB(62,91,153);
+}
+.signup-button{
+    width:44%;
+    height:40px;
+    background-color: RGB(92,149,73);
+    border:1px solid black;
+    border-radius:5px;
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.font-awesome{
+    font-size:20px;
+    color: slategrey;
+}
+.footnote{
+    font-size:15px;
+    font-weight: bold;
+    padding-top:20px;
+    color:gray;
+    margin-bottom:70px;
+}
+
+.foot .upper-foot{
+    list-style-type: none;
+    float:left;
+}
+
+.foot .upper-foot li{
+    float:left;
+    padding:20px 30px 10px 0px;
+}
+
+.foot .upper-foot li a{
+    font-size:13px;
+    color: RGB(62,91,153);
+    text-decoration: none;
+}
+.foot .upper-foot li a:hover{
+    text-decoration: underline;
+}
+
+.foot .lower-foot{
+    list-style-type: none;
+    float:left;
+    margin-bottom:20px;
+}
+
+.foot .lower-foot li{
+    float:left;
+    padding:4px 27px 0px 0px;
+}
+.foot .lower-foot li a:hover{
+    text-decoration: underline;
+}
+
+.foot .lower-foot li a{
+    font-size:12px;
+    color: RGB(62,91,153);
+    text-decoration: none;
+}
+
+.lowermost-foot{
+    font-size:12px;
+    color:gray;
+    margin-bottom:20px;
+}
