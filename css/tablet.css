@@ -1,0 +1,38 @@
+.top-section{
+    height: 950px;
+}
+.services-section{
+    background-color: #eee;
+}
+.services-flex-container{
+    flex-direction:column;
+    padding-left:55px;
+    padding-right:100px;
+    /* background-color: red; */
+}
+.services-heading{
+    padding-top:40px;
+
+}
+
+.investment{
+   margin-bottom:20px;
+}
+
+.portfolio{
+    margin-bottom:20px;
+}
+
+.members{
+    border-bottom:none;
+}
+
+
+.form{
+    width:55%;
+}
+
+.right-image{
+    width:45%;
+}
+
