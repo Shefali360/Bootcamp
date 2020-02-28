@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font{
+    font-size:18px;    
+    font-weight: bold;             
+}
+.parent-div{
+    position:relative;
+    background-color: red;
+    height:650px;
+}
+.overlay{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
+.inner-div{
+    position: absolute;
+    background-color: pink;
+    top:100px;
+    left:50px;
+}
+
+.inner-child-div{
+    position:absolute;
+    background-color: yellow;
+    top:300px;
+    left:0;
+}
+
+.inner-inner-child-div{
+    position:relative;
+    background-color: cadetblue;
+    top:20px;
+}
+.overlay{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
