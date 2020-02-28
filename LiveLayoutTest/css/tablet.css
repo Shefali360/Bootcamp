@@ -1,0 +1,55 @@
+.nav-flex-container{
+    flex-direction:column;
+    align-items: center;
+}
+
+.top-section{
+    display: flex;
+    justify-content:space-between;
+    /* flex-direction:column; */
+}
+
+.left-inner-section{  
+    width:50%;
+    position:none;
+}
+
+.right-inner-section{
+    /* width:100%; */
+    position:none;
+}
+
+.last-section-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.last-section-container .heading{
+    width:100%;
+    padding:50px;
+}
+
+.heading p{
+    font-size:40px;
+}
+
+
+.last-section-container .text{
+    width:100%;
+    padding:50px;
+}
+
+
+
+.text p{
+    font-size:25px;
+}
+
+.text img{
+    width:20%;
+    height:20%;
+}
+
+.text .customer-name{
+    font-size:25px;
+}

@@ -1,0 +1,43 @@
+.nav-flex-container{
+    flex-direction:column;
+    align-items: center;
+}
+
+.top-section{
+    display: flex;
+    /* flex-direction:column; */
+}
+
+
+.last-section-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.last-section-container .heading{
+    width:100%;
+    padding-top:20px;
+}
+
+.heading p{
+    font-size:30px;
+}
+
+.last-section-container .text{
+    width:100%;
+    padding-top:30px;
+    padding-top:30px;
+}
+
+.text p{
+    font-size:15px;
+}
+
+.text img{
+    width:20%;
+    height:20%;
+}
+
+.text .customer-name{
+    font-size:15px;
+}
