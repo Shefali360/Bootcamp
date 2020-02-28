@@ -1,0 +1,149 @@
+.flex-container{
+    display:flex;
+}
+
+.logo{
+    padding:10px 20px 10px 30px;
+    margin:10px 0px;
+    /* background-color: red; */
+}
+.flex-container-right{
+    display: none;
+}
+
+.responsive-bars {
+    display: block;
+    color: #fff;
+}
+
+.hover-sidebar{
+    /* display: block; */
+    background-color:#ff6902;
+    width:40%;
+    height:100%;
+    top:0;
+    bottom:0;
+    right:0;
+    position:fixed;
+    z-index:4;
+}
+
+.hover-sidebar ul{
+    list-style-type: none;
+}
+
+.hover-sidebar li:last-child{
+    border:none;
+}
+
+
+.hover-sidebar a{
+    text-decoration: none;
+    color:white;
+    font-size:0.8rem;
+    margin:10px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding:10px;
+    width:85%;
+}
+
+.hover-sidebar li:first-child a{
+    border:none;
+    margin-top:5px;
+    text-align:right;
+}
+
+.video-flex-container{
+    box-shadow: none;
+}
+
+.brand-container{
+    box-shadow: none;
+}
+
+.brand-container li {
+    border:1px solid #ccc;
+    flex-basis: 33.33%;
+}
+
+.brand-container li:nth-child(3),
+.brand-container li:nth-child(3) img
+{
+    border-top-right-radius: 20px;
+}
+
+.brand-container li:nth-child(4),
+.brand-container li:nth-child(4) img
+{
+    border-radius: 0px;
+}
+
+.last-list-item,.last-logo{
+    display: none;
+}
+
+.form {
+    padding: 0 10px;
+}
+
+.form-element {
+    padding-right: 0;
+}
+
+.form-element:first-child {
+    padding-right: 10px;
+}
+
+.form-element:nth-child(-n + 2) {
+    flex-basis: 50%;
+}
+
+.form-element:nth-child(3) {
+    flex-basis: 100%;
+}
+
+.form-element:nth-child(4) {
+    padding-right: 10px;
+}
+
+.foot{
+    flex-direction: column;
+}
+
+.upper-foot{
+    flex-direction: column;
+    align-items: center;
+    border:none;
+    margin-bottom:20px;
+    padding-top:20px;
+}
+
+.upper-foot .top-heading{
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.lower-foot{
+    order:-1;
+}
+
+.right-lower-foot{
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom:20px;
+    /* order:-1; */
+}
+
+.right-right-lower-foot{
+    margin-bottom:10px;
+}
+
+.right-lower-foot .foot-icons{
+    text-align:center;
+}
+.right-right-lower-foot{
+    order:-1;
+    text-align:center;
+}
