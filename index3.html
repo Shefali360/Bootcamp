@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bootcamp Session 2</title>
+  </head>
+  <body>
+    <p>Question 3. Explain difference between Bind and Call (example).</p>
+    <p>Answer is logged at console.</p>
+    <script>
+      var obj = {
+        name: "Shefali",
+        competency: function(comp) {
+          this.competency = comp;
+        }
+      };
+
+      function fun() {
+        this.age = 23;
+        obj.competency.call(this, "FEEN");
+      }
+      var obj2 = {
+        firstname: "Raj",
+        lastname: "Gupta"
+      };
+      function fun1() {
+        this.phoneno = 9675678990;
+        console.log(this.firstname, this.lastname);
+      }
+
+      var func = fun1.bind(obj2);
+      func();
+      var ob = new fun();
+      console.log(ob);
+    </script>
+  </body>
+</html>

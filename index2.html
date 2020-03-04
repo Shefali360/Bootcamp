@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bootcamp Session 2</title>
+  </head>
+  <body>
+    <p>Question 2.Given an array, say [1,2,3,4,5]. Print each element of an array after 3 secs.</p>
+    <p>Answer is logged at console.</p>
+      <script>
+  function showArray(){
+    var arr=[1,2,3,4,5];
+    var i=0;
+   var inter = setInterval(function(){
+     console.log(arr[i]);
+     var count=i++;
+      if(count==arr.length-1)
+    {
+      clearInterval(inter);
+    }
+   },3000); 
+  }
+  showArray(); 
+      </script>
+   </body>
+   </html>
