@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bootcamp Session 2</title>
+  </head>
+  <body>
+    <p>Question 7.Explain 5 array methods with example.</p>
+    <p>Answer is logged at console.</p>
+    <script>
+         function arrayfunc(){
+    var arr=[1,2,3,4,5];
+    var arr1=[5,6,7,8,9]
+    //Array method push
+    console.log("The push array method inserts an element at the end of the array.")
+    console.log("Array before applying push method.")
+    console.log(arr);
+    arr.push(7);
+    console.log("Array after applying push method.")
+    console.log(arr);
+    //Array method reduce
+    console.log("The reduce array method reduces the elements of the array into a single value using an accumulator by applying the operation defined by us.")
+      console.log("Array before applying reduce method.")
+    console.log(arr);
+    var sum=arr.reduce(func);
+    console.log("Array after applying reduce method.")
+    console.log(sum);
+    //Array method splice
+    console.log("The splice array method takes 3 arguments(index,how many elements to be deleted,comma separated element list and works on the original array.")
+    console.log("Array before applying splice method.")
+    console.log(arr1);
+   arr1.splice(3,0,9,21);
+   console.log("Array after applying splice method.")
+    console.log(arr1);
+    //Array method sort
+    console.log("The sort array method sorts the array alphabetically but to sort a number array we need to define a custom function.")
+    console.log("Array before applying sort method");
+    console.log(arr1);
+    arr1.sort(function(a, b){return a-b});
+    console.log("Array after applying sort method");
+    console.log(arr1);
+    //Array method map
+    console.log("The map array method creates a new array populated with the results of calling a provided function on every element in the calling array.");
+    console.log("Array before applying map method")
+    console.log(arr);
+    console.log("Array after applying map method")
+    console.log(arr.map(Math.sqrt));
+  }
+  function func(total, value) {
+  return total + value;
+}
+    arrayfunc();
+    </script>
+    </body>
+    </html>

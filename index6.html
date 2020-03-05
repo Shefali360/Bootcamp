@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bootcamp Session 1</title>
+  </head>
+  <body>
+    <p>Question 6.Create a counter using closures.</p>
+    <p>Answer is logged at console.</p>
+      <script>
+      function counter(){
+              var counting=1;
+              return function(){
+                  return counting++;
+              }
+
+          }
+
+          var count=counter();
+          console.log(count());
+          console.log(count());
+          console.log(count());
+          console.log(count());
+          console.log(count());
+      </script>
+      </body>
+      </html>

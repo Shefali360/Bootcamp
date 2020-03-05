@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bootcamp Session 2</title>
+  </head>
+  <body>
+    <p>
+      Question 5.Create a function which returns number of invocations and
+      number of instances of a function.
+    </p>
+    <p>Answer is logged at console.</p>
+    <script>
+      invocationAndInstanceCounter.instances = 0;
+      invocationAndInstanceCounter.invocations = 0;
+      function invocationAndInstanceCounter() {
+        if (this instanceof invocationAndInstanceCounter) {
+          invocationAndInstanceCounter.instances += 1;
+        } else {
+          invocationAndInstanceCounter.invocations += 1;
+        }
+
+        console.log(
+          `invocations: ${invocationAndInstanceCounter.invocations} \t instances: ${invocationAndInstanceCounter.instances}`
+        );
+      }
+
+      invocationAndInstanceCounter();
+      new invocationAndInstanceCounter();
+      invocationAndInstanceCounter();
+      new invocationAndInstanceCounter();
+      invocationAndInstanceCounter();
+      new invocationAndInstanceCounter();
+      invocationAndInstanceCounter();
+      new invocationAndInstanceCounter();
+      invocationAndInstanceCounter();
+      new invocationAndInstanceCounter();
+    </script>
+  </body>
+</html>

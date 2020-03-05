@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bootcamp Session 2</title>
+  </head>
+  <body>
+      <p>Question 1.Create a hierarchy of person, employee and developers.</p>
+      <p>Answer is logged at console.</p>
+   <script>
+    function person(){
+     this.person1={name:"Ankur",age:19}
+     this.person2={name:"Sudha",age:25}
+     this.person3={name:"Shubhankar",age:22}
+
+   }
+   function employee(){
+     this.emp1={empid:1}
+     this.emp2={empid:2}
+     this.emp3={empid:3}
+     person.call(this);
+   }
+   
+   function developers(){
+     this.dev1={competency:"FEEN"}
+     this.dev2={competency:"MEAN"}
+     this.dev3={competency:"ReactNative"}
+     employee.call(this);
+   }
+   var persons= new person();
+   console.log(persons);
+   var empl=new employee();
+   console.log(empl);
+   var dev=new developers();
+   console.log(dev);
+   </script>
+  </body>
+</html>
