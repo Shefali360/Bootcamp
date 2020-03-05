@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEN Bootcamp Session3</title>
+</head>
+<body>
+    <p>Ques 4.Extract all keys inside address object from user object using destructuring.</p>
+    <p>Output is logged at console.</p>
+    <script>
+   function extract(){
+        const user = {
+        firstName: "Sahil",
+        lastName: "Dua",
+        Address: {
+        Line1: "Address line 1",
+        Line2: "Address line 2",
+        State: "Delhi",
+        Pin: 110085,
+        Country: "India",
+        City: "New Delhi",
+        },
+        phoneNo: 9999999999
+        }
+    const {Address: {Line1,Line2,State,Pin,Country,City}}=user;
+    console.log(Line1);
+    console.log(Line2);
+    console.log(State);
+    console.log(Pin);
+    console.log(Country);
+    console.log(City);
+   }
+   extract();
+    </script>
+</body>
+</html>

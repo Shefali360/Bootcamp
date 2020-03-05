@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEEN Bootcamp Session3</title>
+  </head>
+  <body>
+    <p>
+       Ques2.<br>
+        1.Select all the list items on the page and convert to array.<br>
+        2.Filter for only the elements that contain the word 'flexbox'.<br>
+        3.Map down to a list of time strings.<br>
+        4.Map to an array of seconds.<br>
+        5.Reduce to get total.
+    </p>
+    <p>
+        output is logged at console.
+    </p>
+    <ul>
+      <li data-time="5:17">Flexbox Video</li>
+      <li data-time="8:22">Flexbox Video</li>
+      <li data-time="3:34">Redux Video</li>
+      <li data-time="5:23">Flexbox Video</li>
+      <li data-time="7:12">Flexbox Video</li>
+      <li data-time="7:24">Redux Video</li>
+      <li data-time="6:46">Flexbox Video</li>
+      <li data-time="4:45">Flexbox Video</li>
+      <li data-time="4:40">Flexbox Video</li>
+      <li data-time="7:58">Redux Video</li>
+      <li data-time="11:51">Flexbox Video</li>
+      <li data-time="9:13">Flexbox Video</li>
+      <li data-time="5:50">Flexbox Video</li>
+      <li data-time="5:52">Redux Video</li>
+      <li data-time="5:49">Flexbox Video</li>
+      <li data-time="8:57">Flexbox Video</li>
+      <li data-time="11:29">Flexbox Video</li>
+      <li data-time="3:07">Flexbox Video</li>
+      <li data-time="5:59">Redux Video</li>
+      <li data-time="3:31">Flexbox Video</li>
+    </ul>
+    <script>
+     function list() {
+        let arr = Array.from(document.getElementsByTagName("li"));
+        console.log("Select all the list items on the page and convert to array.");
+        console.log(arr.map(li => li.innerHTML));
+        let flexFiltered = arr.filter((li)=>li.innerHTML.includes("Flexbox"));
+        console.log("Filter for only the elements that contain the word 'flexbox'.");
+        let mappedArray=flexFiltered.map(li => li.innerHTML);
+        console.log(mappedArray);
+        let timeArray=arr.map((ele)=>ele.getAttribute("data-time"));
+        console.log("Map down to a list of time strings.");
+        console.log(timeArray);
+        let splittedArray=timeArray.map(ele=>ele.split(":")[1]);
+        console.log("Map to an array of seconds.");
+        console.log(splittedArray);
+        let numberArray= splittedArray.map(sec => this.parseInt(sec));
+        let sum=numberArray.reduce((total,num)=>{return total+num;});
+        console.log("Reduce to get total.");
+        console.log(sum);
+      }
+      list();
+     
+    </script>
+  </body>
+</html>
