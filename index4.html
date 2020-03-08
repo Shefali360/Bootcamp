@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Question 4</title>
+  </head>
+  <body>
+    <p>
+      Ques 4. Write a program to implement a class having static functions.
+    </p>
+    <p>
+      Output is logged at console.
+    </p>
+    <script>
+      class instanceCounter {
+        constructor() {
+          if (instanceCounter.instances) instanceCounter.instances += 1;
+          else instanceCounter.instances = 1;
+        }
+
+        static getInstanceCount() {
+          return instanceCounter.instances;
+        }
+      }
+      
+      let i1 = new instanceCounter();
+      let i2 = new instanceCounter();
+      let i3 = new instanceCounter();
+      let i4 = new instanceCounter();
+      let i5 = new instanceCounter();
+
+      console.log(instanceCounter.getInstanceCount());
+    </script>
+  </body>
+</html>

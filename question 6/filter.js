@@ -1,0 +1,1 @@
+export const getUnique = arr => Array.from(new Set(arr));

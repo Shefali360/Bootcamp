@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Question 3</title>
+  </head>
+  <body>
+    <p>
+      Ques 3.Write a program to implement inheritance upto 3 classes.The Class
+      must have public variables and static functions.
+    </p>
+    <p>
+      Output is logged at console.
+    </p>
+    <script>
+      class vehicle {
+        engine = "v4";
+        wheels = 4;
+        constructor(wheels, engine) {
+          this.wheels = wheels;
+          this.engine = engine;
+        }
+      }
+
+      class car extends vehicle {
+        transmission = "manual";
+        constructor(wheelCount, engineType, transmission) {
+          super(wheelCount, engineType);
+          this.transmission = transmission;
+        }
+      }
+
+      class nissan extends car {
+        model = "GT";
+        constructor(wheelCount, engineType, transmission, model) {
+          super(wheelCount, engineType, transmission);
+          this.model = model;
+        }
+
+        getCarInfo = () => {
+          return {
+            wheels: this.wheels,
+            engine: this.engine,
+            transmission: this.transmission,
+            model: this.model
+          };
+        };
+      }
+
+      let Info = new nissan(4, "v8", "automatic", "GT-R");
+      console.log(Info.getCarInfo());
+    </script>
+  </body>
+</html>
