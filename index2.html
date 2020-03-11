@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ES6 Question 2</title>
-</head>
-<body>
+  </head>
+  <body>
     <p>
-       Ques 2. Find the possible combinations of a string and store them in a MAP?
+      Ques 2. Find the possible combinations of a string and store them in a
+      MAP?
     </p>
     <p>
-        Output is logged at console.
-      </p>
+      Output is logged at console.
+    </p>
     <script>
+              function getCharMap(str) {
+          let map = new Map();
+          let idx = 0;
+          for(let c of str.split("")) {
+              map.set(c, idx++);
+          }
 
+          return map;
+      }
+
+      function jumble(str) {
+          if (str.length < 2) return str;
+
+          let permutations = [];
+          let charMap = getCharMap(str);
+
+          for (let i = 0; i < str.length; i++) {
+            let char = str[i];
+
+            if (charMap.get(char) != i)
+              continue;
+
+            let remainingString = str.slice(0, i) + str.slice(i + 1, str.length);
+
+            for (let subPermutation of jumble(remainingString))
+              permutations.push(char + subPermutation)
+          }
+          return permutations;
+        }
+
+      console.log(jumble("mango"));
     </script>
-    
-</body>
+  </body>
 </html>

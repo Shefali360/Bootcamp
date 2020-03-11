@@ -14,59 +14,50 @@
       Output is logged at console.
     </p>
     <script>
-              class node {
-          constructor(data) {
-              this.data = data;
-              this.next = null;
-          }
-      }
-
-      class linkedList {
-          constructor(firstNode) {
-                  this.head = firstNode;
-                  this.last = firstNode;
-          }
-
-          addfirst = (node) => {
-              node.next = this.head;
-              this.head = node;
-          }
-
-          addLast = (node) => {
-              this.last.next = node;
-              this.last = node;
-          }
-
-          getLength = () => {
-              let currentNode = this.head;
-              class node {
-          constructor(data) {
-              this.data = data;
-              this.next = null;
-          }
-      }
-    
-
-      class linkedList {
-          constructor(firstNode) {
-                  this.head = firstNode;
-                  this.last = firstNode;
-          }
-
-          addfirst = (node) => {
-              node.next = this.head;
-              this.head = node;
-          }
-
-          addLast = (node) => {
-              this.last.next = node;
-              this.last = node;
-          }
-
-          getLength = () => {
-              let currentNode = this.head;
-          }
+      class node {
+        constructor(data) {
+          this.data = data;
+          this.next = null;
         }
+      }
+
+      class linkedList {
+        constructor(firstNode) {
+          this.head = firstNode;
+          this.last = firstNode;
+        }
+
+        addfirst = node => {
+          node.next = this.head;
+          this.head = node;
+        };
+
+        addLast = node => {
+          this.last.next = node;
+          this.last = node;
+        };
+
+        getLength = () => {
+          let currentNode = this.head;
+          let length = 0;
+          while (currentNode) {
+            length++;
+            currentNode = currentNode.next;
+          }
+          return length;
+        };
+
+        printlist = () => {
+          let currentNode = this.head;
+          while (currentNode) {
+            console.log(currentNode.data);
+            currentNode = currentNode.next;
+          }
+        };
+
+        getFirst = () => this.head;
+        getLast = () => this.last;
+      }
 
       let n1 = new node(1);
       let n2 = new node(2);
