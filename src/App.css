@@ -1,0 +1,38 @@
+body{
+background: url('./images.jpeg') no-repeat center center/cover;
+height:600px;
+}
+
+.fruit-list{
+    min-height:500px;
+}
+
+h3{
+  margin-top:70px;
+  font-size:45px;
+  text-align: center;
+}
+
+#form{
+  text-align: center;
+}
+
+#form input{
+  height:30px;
+  width:300px; 
+  border-radius:5px;
+  border:none; 
+  font-size:18px;
+  padding-left:10px;
+}
+
+#form button{
+ margin-left:20px;
+  height:32px;
+  width:100px;
+  border-radius:2px;
+  font-size:17px;
+  border:none;
+  background-color: green;
+  color:white;
+}
